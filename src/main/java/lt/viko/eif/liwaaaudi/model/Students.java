@@ -23,7 +23,6 @@ public class Students {
 
     @Override
     public String toString() {
-        //return String.format("STUDENTS: \n\n %s", printStudents());
         return String.format(printStudents());
     }
 

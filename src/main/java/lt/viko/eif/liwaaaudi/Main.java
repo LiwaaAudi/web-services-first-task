@@ -15,18 +15,18 @@ public class Main {
 
         Students students = transformerService.transformToPojo("student.xml");
 
-        System.out.println(students); // performing transformation to object and outputting result
+        System.out.println(students);
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Press 1 to change student 3 name: ");
+        System.out.println("Press 1 to change student 1 name: ");
 
         String choice = scanner.nextLine();
 
         if ("1".equals(choice)) {
-            students.getStudentList().get(2).setFirstName("Changed Name");
+            students.getStudentList().get(0).setFirstName("Changed Name");
         }
         System.out.println();
-        transformerService.transformToXML(students); // performing transformation to XML and outputting result
+        transformerService.transformToXML(students);
     }
 }

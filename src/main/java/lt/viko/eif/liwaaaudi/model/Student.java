@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @XmlType(propOrder = {"id", "firstName", "lastName", "age", "subjectsList", "gradeList", "classList", "graduationList"})
-// write order by xml elements names. Taking fields names
+
 public class Student {
 
     private int id;
@@ -102,7 +102,7 @@ public class Student {
         this.gradeList = gradeList;
     }
 
-    @XmlElement(name = "subject") // the most appropriate way to change names to fti xml
+    @XmlElement(name = "subject")
     public List<Subject> getSubjectsList() {
         return subjectsList;
     }
@@ -111,7 +111,7 @@ public class Student {
         this.subjectsList = subjectsList;
     }
 
-    @XmlElement(name = "class") // the most appropriate way to change names to fti xml
+    @XmlElement(name = "class")
     public List<Class> getClassList() {
         return classList;
     }

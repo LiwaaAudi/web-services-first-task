@@ -28,6 +28,10 @@ public class TransformerServiceTest {
 
         assertEquals("Student 1", students.getStudentList().get(0).getFirstName(), "First name is not correct");
         assertEquals("Stud 2", students.getStudentList().get(1).getLastName() , "Last name is not correct");
+        assertEquals("Stud 3", students.getStudentList().get(2).getLastName() , "Last name is not correct");
+
+        assertEquals(22, students.getStudentList().get(2).getAge(), "Age is not correct");
+        assertEquals(2022, students.getStudentList().get(1).getGraduationList().get(0).getGradYear(), "Year is not correct");
     }
 
     @Test

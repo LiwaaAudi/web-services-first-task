@@ -12,7 +12,7 @@ import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class TransformerService { // transformation functionality
+public class TransformerService {
 
     private static JAXBContext jaxbContext;
 
@@ -25,7 +25,7 @@ public class TransformerService { // transformation functionality
         }
     }
 
-    public Students transformToPojo(String fileName) {  // from XML to objects
+    public Students transformToPojo(String fileName) {
 
         Students students = null;
         try {
@@ -33,7 +33,7 @@ public class TransformerService { // transformation functionality
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
             Path filePath = Path.of(fileName);
-            String actual = Files.readString(filePath); // reading xml string from file
+            String actual = Files.readString(filePath);
             System.out.print(actual);
             StringReader reader = new StringReader(actual);
             students = (Students) unmarshaller.unmarshal(reader);
@@ -45,7 +45,7 @@ public class TransformerService { // transformation functionality
         return students;
     }
 
-    public String transformToXML(Students students) { // from objects to XML
+    public String transformToXML(Students students) {
 
         StringWriter xmlWriter = new StringWriter();
 
