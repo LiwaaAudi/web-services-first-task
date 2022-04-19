@@ -1,0 +1,84 @@
+<students>
+
+    <student>
+        <firstName>Student 1</firstName>
+        <lastName>Stud 1</lastName>
+        <id>1</id>
+        <age>19</age>
+        <grade>
+                <finalGrade>5</finalGrade>
+                <maxGrade>10</maxGrade>
+        </grade>
+        <subject>
+            <subjectName>Web Services</subjectName>
+            <credits>6</credits>
+            <fullMark>100</fullMark>
+            <mark>80</mark>
+        </subject>
+        <class>
+            <classId>20</classId>
+            <mainClassRoom>245</mainClassRoom>
+        </class>
+        <graduation>
+            <gradYear>2025</gradYear>
+            <courseDuration>3,5 years</courseDuration>
+        </graduation>
+    </student>
+
+    <student>
+        <firstName>Student 2</firstName>
+        <lastName>Stud 2</lastName>
+        <id>2</id>
+        <age>21</age>
+        <grade>
+            <finalGrade>17</finalGrade>
+            <maxGrade>20</maxGrade>
+        </grade>
+        <subject>
+            <subjectName>Object Oriented Programming</subjectName>
+            <credits>3</credits>
+            <fullMark>10</fullMark>
+            <mark>10</mark>
+        </subject>
+        <subject>
+            <subjectName>Web Services</subjectName>
+            <credits>6</credits>
+            <fullMark>100</fullMark>
+            <mark>90</mark>
+        </subject>
+        <class>
+            <classId>25</classId>
+            <mainClassRoom>260</mainClassRoom>
+        </class>
+        <graduation>
+            <gradYear>2022</gradYear>
+            <courseDuration>4 years</courseDuration>
+        </graduation>
+    </student>
+
+    <student>
+        <firstName>Student 3</firstName>
+        <lastName>Stud 3</lastName>
+        <id>3</id>
+        <age>22</age>
+        <grade>
+            <finalGrade>60</finalGrade>
+            <maxGrade>100</maxGrade>
+        </grade>
+        <subject>
+            <subjectName>Maths</subjectName>
+            <credits>6</credits>
+            <fullMark>100</fullMark>
+            <mark>85</mark>
+        </subject>
+        <class>
+            <classId>21</classId>
+            <mainClassRoom>222</mainClassRoom>
+        </class>
+        <graduation>
+            <gradYear>2023</gradYear>
+            <courseDuration>3 years</courseDuration>
+        </graduation>
+    </student>
+
+</students>
